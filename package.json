@@ -1,0 +1,33 @@
+{
+  "name": "cur-conv-lib",
+  "version": "1.0.0",
+  "description": "up to the day currency convertion library with local storage for forex list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustav1105/cur-conv-lib.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustav1105/cur-conv-lib/issues"
+  },
+  "homepage": "https://github.com/gustav1105/cur-conv-lib#readme",
+  "devDependencies": {
+    "@types/axios": "^0.14.4",
+    "@types/node": "^22.7.9",
+    "@types/pg": "^8.11.10",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "pg": "^8.13.0"
+  }
+}

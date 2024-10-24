@@ -1,0 +1,27 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:                       # Load environment variables from the .env file
+      - .env
+    depends_on:
+      - db
+    volumes:
+      - .:/usr/src/app
+    restart: always
+
+  db:
+    image: postgres:13-alpine
+    env_file:                       # Load environment variables for PostgreSQL from the .env file
+      - .env
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  postgres_data:
+
